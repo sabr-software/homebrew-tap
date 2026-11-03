@@ -5,21 +5,21 @@
 class Pilothouse < Formula
   desc "One inbox for every coding agent — rules before every tool call, approvals from your phone"
   homepage "https://pilothouse.dev"
-  version "0.4.4"
+  version "0.4.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sabr-software/pilothouse/releases/download/v0.4.4/pilothouse_0.4.4_darwin_amd64.tar.gz"
-      sha256 "64c139cce23ad20e05c6b44bf2ac59accfb0d0fededdb190c3dd7fc377123e95"
+      url "https://github.com/sabr-software/pilothouse/releases/download/v0.4.5/pilothouse_0.4.5_darwin_amd64.tar.gz"
+      sha256 "51c4e7817b3edfbbd1c926545717272f14fe65b49b15d3a93c1f5e384171bf85"
 
       define_method(:install) do
         bin.install "pilothouse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sabr-software/pilothouse/releases/download/v0.4.4/pilothouse_0.4.4_darwin_arm64.tar.gz"
-      sha256 "1cff2b65a6cad60fcc315c0e2833162a8878cfcd87fbb5fc6e28846fc5b86947"
+      url "https://github.com/sabr-software/pilothouse/releases/download/v0.4.5/pilothouse_0.4.5_darwin_arm64.tar.gz"
+      sha256 "474f1fb6d64cbe4cb086a5b35e292dc2f812eb4aa017ade15b5e30d13ca421e0"
 
       define_method(:install) do
         bin.install "pilothouse"
@@ -29,15 +29,15 @@ class Pilothouse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sabr-software/pilothouse/releases/download/v0.4.4/pilothouse_0.4.4_linux_amd64.tar.gz"
-      sha256 "4bb921d364bc5b0099a42d5a970fb010ea2d1f563375968fed1689fc38433274"
+      url "https://github.com/sabr-software/pilothouse/releases/download/v0.4.5/pilothouse_0.4.5_linux_amd64.tar.gz"
+      sha256 "fa4bd912435bb92e3172073b44b51871bee97d824e234e1256741ae1d7319ef7"
       define_method(:install) do
         bin.install "pilothouse"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sabr-software/pilothouse/releases/download/v0.4.4/pilothouse_0.4.4_linux_arm64.tar.gz"
-      sha256 "5d88f4cf3734c1cd503a9dd64f1fb05e499bd9f56adde3499dffca5aee804a7c"
+      url "https://github.com/sabr-software/pilothouse/releases/download/v0.4.5/pilothouse_0.4.5_linux_arm64.tar.gz"
+      sha256 "fe8f0380cf7ee7c500480c6ff75137f3c5d0c83e9cd94b62db9edfae0ac7323c"
       define_method(:install) do
         bin.install "pilothouse"
       end
